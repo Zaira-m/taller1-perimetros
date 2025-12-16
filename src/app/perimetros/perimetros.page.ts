@@ -17,9 +17,9 @@ import { CirculoComponent } from '../circulo/circulo.component';
 import { TrianguloComponent } from '../triangulo/triangulo.component';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.page.html',
-  styleUrls: ['./home.page.scss'],
+  selector: 'app-perimetros',
+  templateUrl: './perimetros.page.html',
+  styleUrls: ['./perimetros.page.scss'],
   standalone: true,
   imports: [
     CommonModule,
@@ -36,7 +36,7 @@ import { TrianguloComponent } from '../triangulo/triangulo.component';
     TrianguloComponent,
   ],
 })
-export class HomePage {
+export class PerimetrosPage {
   figuraSeleccionada: string = 'circulo'; // por defecto
 
   constructor() {}

@@ -1,0 +1,50 @@
+/* Centrar todo el contenido del componente */
+.contenedor {
+  max-width: 600px;      /* ancho fijo como una tarjeta */
+  margin: 0 auto;        /* centra horizontalmente */
+  text-align: center;    /* centra TODO el texto */
+  padding: 20px;
+}
+
+/* Centrar la imagen */
+.imagen img {
+  width: 260px;
+  height: auto;
+  margin: 0 auto 20px auto; /* centro + separado del texto */
+  display: block;
+}
+
+/* Inputs centrados pero con ancho completo */
+.campo {
+  margin-bottom: 12px;
+  text-align: left; /* etiqueta alineada a la izquierda */
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #444;
+  background: #111;
+  color: #fff;
+}
+
+.boton {
+  width: 100%;
+  background: #3b82f6;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.boton:hover {
+  background: #2563eb;
+}
+
+.resultado {
+  margin-top: 16px;
+  font-size: 18px;
+}

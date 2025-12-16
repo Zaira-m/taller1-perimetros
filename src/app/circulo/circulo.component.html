@@ -1,0 +1,24 @@
+<div class="contenedor">
+  <h2>Perímetro del Círculo</h2>
+
+  <div class="imagen">
+    <img src="assets/img/circulo.png" alt="círculo">
+  </div>
+
+  <p class="descripcion">
+    Ingresa el radio del círculo para calcular su perímetro.
+  </p>
+
+  <div class="campo">
+    <label>Radio (cm)</label>
+    <input type="number" [(ngModel)]="radio" />
+  </div>
+
+  <button class="boton" (click)="calcularPerimetro()">
+    Calcular
+  </button>
+
+  <p *ngIf="perimetro > 0" class="resultado">
+    El perímetro es: <strong>{{ perimetro | number:'1.2-2' }} cm</strong>
+  </p>
+</div>

@@ -1,0 +1,42 @@
+<div class="contenedor">
+  <h2>Perímetro del Triángulo</h2>
+
+  <div class="figura-layout">
+
+    <!-- Imagen -->
+    <div class="imagen">
+      <img src="assets/img/triangulo.png" alt="triángulo">
+    </div>
+
+    <!-- Texto y formulario -->
+    <div class="texto">
+      <p class="descripcion">
+        Ingresa las longitudes de los tres lados para calcular su perímetro.
+      </p>
+
+      <div class="campo">
+        <label>Lado A (cm)</label>
+        <input type="number" [(ngModel)]="ladoA" min="1" placeholder="Ingrese el lado A" />
+      </div>
+
+      <div class="campo">
+        <label>Lado B (cm)</label>
+        <input type="number" [(ngModel)]="ladoB" min="1" placeholder="Ingrese el lado B" />
+      </div>
+
+      <div class="campo">
+        <label>Lado C (cm)</label>
+        <input type="number" [(ngModel)]="ladoC" min="1" placeholder="Ingrese el lado C" />
+      </div>
+
+      <button class="boton" (click)="calcularPerimetro()">
+        Calcular
+      </button>
+
+      <p *ngIf="perimetro > 0" class="resultado">
+        El perímetro es: <strong>{{ perimetro | number:'1.2-2' }} cm</strong>
+      </p>
+    </div>
+
+  </div>
+</div>
